@@ -11,14 +11,15 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",
         glue = "stepdefinitions",
-        tags = "@US1008",
+        tags = "@screen",
         dryRun = false
 )
 
 public class Runner {
     /*
-    * Runner class boş bir classs dır
-    * Runner class ı bize sağladığı işlev, sahip olduğu 2 notasyon sayesindedir
+    Runner class'i BOS bir class'dir
+    Runner class'inin bize sagladigi islev
+    Sahip oldugu 2 notasyon sayesindedir
 
     dryRun = true yaptigimizda
     var olan adimlari CALISTIRMADAN
@@ -27,8 +28,18 @@ public class Runner {
     EGER eksik adim yoksa,
     bu durumu raporlamak icin Test PASSED isaretlenir
 
-     */
+    features = "src/test/resources",
+    glue = "stepdefinitions",
 
+    bu iki klasor birbiriyle ilisiklendirildigi icin
+    bu klasorlerin altindaki tum file'lar ve class'lar ilisiklidir
+    Cucumber da file ve class'lari 1-1 eslestirmek yerine
+    tumunu eslestirir
 
+    Eger siz spesifik olarak 1 feature'i,
+    belirlediginiz 1 stepdefinition class'i ile calismasini isterseniz
+    Runner class'inda bu eslesmeyi yapabilirsiniz
+
+ */
 
 }
